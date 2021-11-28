@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_recipe">
+
+    <fragment
+        android:id="@+id/nav_recipe"
+        android:name="com.enhanced.sustenance.ui.recipe_fragment.RecipeMainFragment"
+        android:label="@string/menu_recipe"
+        tools:layout="@layout/fragment_recipe_main" >
+        <action
+            android:id="@+id/action_nav_recipe_to_nav_new_recipe"
+            app:destination="@id/nav_new_recipe" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pantry"
+        android:name="com.enhanced.sustenance.ui.pantry_fragment.PantryFragment"
+        android:label="@string/menu_pantry"
+        tools:layout="@layout/fragment_pantry" >
+        <action
+            android:id="@+id/action_nav_pantry_to_nav_item"
+            app:destination="@id/nav_item" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_shopping"
+        android:name="com.enhanced.sustenance.ui.shopping_fragment.ShoppingMainFragment"
+        android:label="@string/menu_shopping"
+        tools:layout="@layout/fragment_shopping_main" />
+
+    <fragment
+        android:id="@+id/nav_item"
+        android:name="com.enhanced.sustenance.ui.pantry_fragment.FoodItemFragment"
+        android:label="item"
+        tools:layout="@layout/fragment_food_item" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_new_recipe"
+        android:name="com.enhanced.sustenance.ui.recipe_fragment.ExpandedRecipeFragment"
+        android:label="item"
+        tools:layout="@layout/fragment_add_recipe" >
+    </fragment>
+
+</navigation>

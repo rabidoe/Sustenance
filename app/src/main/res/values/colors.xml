@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="expired">#FF0000</color>
+    <color name="use_immediately">#FF0000</color>
+    <color name="use_asap">#FFAA00</color>
+    <color name="use_soon">#FFFF00</color>
+    <color name="use_later">#55FF00</color>
+    <color name="pantry_headers">#4A4949</color>
+    <color name="transparent">#00000000</color>
+    <color name="background">#FFB1AEAE</color>
+    <color name="top_bar">#4242EC</color>
+</resources>
